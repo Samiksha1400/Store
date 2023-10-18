@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddEmployee">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/theadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Employee"
+            android:textColor="#2196F3"
+            android:textSize="40dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tchildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="40dp"
+            android:text="Add"
+            android:textColor="#2196F3"
+            android:textSize="14dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/eid"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theadline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:hint="ID"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/ename"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:hint="Name"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray"/>
+
+        <EditText
+            android:id="@+id/eaddress"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ename"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:hint="Address"
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/esal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eaddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:hint="Salary "
+            android:paddingLeft="20dp"
+            android:textColorHint="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btnaddemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/esal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Add Employee" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

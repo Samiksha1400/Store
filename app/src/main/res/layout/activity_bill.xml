@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Bill">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/storename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Store Name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:text="Date :"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cname"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTime"
+            android:padding="20dp"
+            android:text="Customer Name : "
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTime"
+            android:layout_toRightOf="@id/cname"
+            android:padding="18dp"
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/mno"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cname"
+            android:layout_marginBottom="30dp"
+            android:padding="20dp"
+            android:text="Mobile Number : "
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_name"
+            android:layout_marginBottom="30dp"
+            android:layout_toRightOf="@id/cname"
+            android:padding="18dp"
+            android:inputType="number"
+            android:textColor="@color/black" />
+
+        <ListView
+            android:id="@+id/listpname"
+            android:layout_width="250dp"
+            android:layout_height="340dp"
+            android:layout_below="@+id/mobileno"
+            android:layout_marginTop="10dp"
+            android:padding="20dp" />
+
+        <ListView
+            android:id="@+id/listpamount"
+            android:layout_width="200dp"
+            android:layout_height="340dp"
+            android:layout_below="@+id/mobileno"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/listpname"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listpname"
+            android:paddingLeft="20dp"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listpamount"
+            android:layout_toRightOf="@+id/amount"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/btngeneratebill"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Generate Bill"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
